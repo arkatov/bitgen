@@ -6,5 +6,5 @@ console.log("-------------------------------------------------------------------
 console.log(`String: ${bw}`);
 console.log(`Address (Legacy, compressed): ${ck.publicAddress}`);
 console.log(`WIF Private Key (Wallet Import Format): ${ck.privateWif}`);
-console.log(`Private Key (Hex, 64 digits): ${ck.privateKey.toString("hex")}`);
+console.log(`Private Key (Hex, SHA256): ${ck.privateKey.toString("hex")}`);
 console.log("----------------------------------------------------------------------------------------------");
