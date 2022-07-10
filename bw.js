@@ -1,0 +1,10 @@
+const coinkey = require("coinkey");
+const sha256 = require("sha256");
+const bw = "YOUR BRAIN WALLET";
+const ck = new coinkey(new Buffer.from(sha256(bw), "hex"));
+console.log("----------------------------------------------------------------------------------------------");
+console.log(`String: ${bw}`);
+console.log(`Address (Legacy, compressed): ${ck.publicAddress}`);
+console.log(`WIF Private Key (Wallet Import Format): ${ck.privateWif}`);
+console.log(`Private Key (Hex, 64 digits): ${ck.privateKey.toString("hex")}`);
+console.log("----------------------------------------------------------------------------------------------");

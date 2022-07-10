@@ -1,0 +1,13 @@
+{
+  "name": "genbtc",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "rand": "node rand.js",
+    "bw": "node bw.js"
+  },
+  "dependencies": {
+    "coinkey": "^3.0.0",
+    "sha256": "^0.2.0"
+  }
+}
