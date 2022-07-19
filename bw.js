@@ -32,7 +32,7 @@ while (j) {
 const ck = new coinkey(new Buffer.from(h, "hex"));
 console.log("----------------------------------------------------------------------------------------------");
 console.log(`String: ${bw}`);
-console.log(`PIN SALT: ${pin}`);
+console.log(`PIN: ${pin}`);
 console.log(`Address (Legacy, compressed): ${ck.publicAddress}`);
 console.log(`WIF Private Key (Wallet Import Format): ${ck.privateWif}`);
 console.log(`Private Key (Hex, SHA256): ${ck.privateKey.toString("hex")}`);
