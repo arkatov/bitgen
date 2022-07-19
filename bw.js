@@ -1,7 +1,7 @@
 const coinkey = require("coinkey");
 const sha256 = require("sha256");
-const bw = "SAMPLE TEXT"; // <-- EDIT "YOUR BRAIN STRING WALLET"
-const pin = "1234"; // <-- EDIT PIN
+const bw = "SAMPLE TEXT"; // <-- DON'T FORGET TO EDIT IT
+const pin = "1234"; // <-- DON'T FORGET TO EDIT IT
 
 function get_salt_num(str, p) {
   var m = 0;
