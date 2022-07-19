@@ -1,6 +1,6 @@
 const coinkey = require("coinkey");
 const sha256 = require("sha256");
-const bw = "YOUR BRAIN STRING WALLET"; // <-- EDIT "YOUR BRAIN STRING WALLET"
+const bw = "SAMPLE TEXT"; // <-- EDIT "YOUR BRAIN STRING WALLET"
 const pin = "1234"; // <-- EDIT PIN
 
 function get_salt_num(str, p) {
@@ -31,8 +31,8 @@ while (j) {
 
 const ck = new coinkey(new Buffer.from(h, "hex"));
 console.log("----------------------------------------------------------------------------------------------");
-console.log(`String: ${bw}`);
-console.log(`PIN: ${pin}`);
+console.log(`YOUR BRAIN STRING WALLET: ${bw}`);
+console.log(`YOUR BRAIN PIN: ${pin}`);
 console.log(`Address (Legacy, compressed): ${ck.publicAddress}`);
 console.log(`WIF Private Key (Wallet Import Format): ${ck.privateWif}`);
 console.log(`Private Key (Hex, SHA256): ${ck.privateKey.toString("hex")}`);
